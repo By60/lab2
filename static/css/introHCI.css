@@ -32,3 +32,31 @@ body {
      position: absolute;
      z-index: -1;	
 }
+
+body {
+     font-family: Futura;
+}
+
+p {
+
+}
+
+.main {
+     margin: 20px;
+}
+
+.header {
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.footer {
+     margin-bottom: 20px;
+}
+
+#emblem {
+     margin-top: 20px;
+     border-radius: 220px;
+     border: 5px solid #B2B2B2;
+     padding: 10px;
+}

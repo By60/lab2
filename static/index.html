@@ -5,7 +5,11 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/my-css.css">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/introHCI.css">
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,68 +20,94 @@
     <![endif]-->        
 </head>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
 <body>
-	<div>
+	<div class="main">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="project">
-			<h1>Brian Yang</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+		<div>
+			<center class="header">
+				<a href="index.html">
+					<img id="emblem" src="images/facebook_profile_pic.png" onmouseover="this.src='images/facebook_profile_pic_color.png'" onmouseout="this.src='images/facebook_profile_pic.png'"/>
+				</a>
+			</center>
+			<div class="jumbotron">
+				<h1>Brian Yang</h1>
+				<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			</div>
 		</div>
 
 
-		<h4>Projects</h4>
+		<h3>projects</h3>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+
 		<div id="project1">
-			<a href="project.html">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Waiting in Line</p>
 			</a>
 		</div>
 		<div id="project2">
-			<a href="project.html">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Needfinding</p>
 			</a>
 		</div>
 		<div id="project3">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Prototyping</p>
 			</a>
 		</div>
 		<div id="project4">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Heuristic Evaluation</p>
 			</a>
 		</div>
 		<div id="project5">
-			<a href="project.html">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Visualization</p>
 			</a>
 		</div>
 		<div id="project6">
-			<a href="project.html">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Social design</p>
 			</a>
 		</div>
 		<div id="project7">
-			<a href="project.html">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Gestural interaction</p>
 			</a>
 		</div>
 		<div id="project8">
-			<a href="project.html">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image">
+			<a href="project.html" class="thumbnail">
+				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
 				<p>Design tools</p>
 			</a>
 		</div>
+	</div>
+	<div>
+		<center class="footer">
+			<a href="http://www.facebook.com/By6000">
+				<img src="images/logo_facebook.png" alt=""/>
+			</a>
+			<a href="https://github.com/By60">
+				<img src="images/logo_github.png" alt=""/>
+			</a>
+			<a href="mailto:blyang@stanford.edu">
+				<img src="images/logo_email.png" alt=""/>
+			</a>
+		</center>
 	</div>
 </body>
 </html>
